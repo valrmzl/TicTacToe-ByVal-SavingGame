@@ -155,6 +155,7 @@ void saveGame(Game *g,int place)
         if(guardar)
         {
             fwrite(g,sizeof(Game),1,guardar);
+            fclose(guardar);
         }
         exit(0);
     }
